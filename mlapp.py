@@ -292,7 +292,7 @@ if st.session_state.problem_type != problem_type:
 
 st.session_state.problem_type = problem_type
 
-    if st.session_state.data is not None:
+if st.session_state.data is not None:
 
         st.markdown("---")
         st.markdown("### 3. Target Column")
