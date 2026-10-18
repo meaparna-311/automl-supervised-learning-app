@@ -282,17 +282,9 @@ with st.sidebar:
         key="problem_type_select"
     )
 
-if st.session_state.problem_type != problem_type:
-    st.session_state.comparison_results = None
-    st.session_state.comparison_models = {}
-    st.session_state.comparison_best_model = None
-    st.session_state.comparison_best_score = None
-    st.session_state.best_model_object = None
-    st.session_state.model_package = None
+    st.session_state.problem_type = problem_type
 
-st.session_state.problem_type = problem_type
-
-if st.session_state.data is not None:
+    if st.session_state.data is not None:
 
         st.markdown("---")
         st.markdown("### 3. Target Column")
