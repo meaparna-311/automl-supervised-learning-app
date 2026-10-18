@@ -282,7 +282,7 @@ with st.sidebar:
         key="problem_type_select"
     )
 
-    if st.session_state.problem_type != problem_type:
+if st.session_state.problem_type != problem_type:
     st.session_state.comparison_results = None
     st.session_state.comparison_models = {}
     st.session_state.comparison_best_model = None
